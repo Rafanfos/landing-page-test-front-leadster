@@ -15,15 +15,15 @@ const BannerContainer = styled.div`
     align-items: center;
 
     .balloon {
-      border: 4px solid var(--default-blue);
+      border: 3px solid var(--default-blue);
       border-radius: 40px 40px 40px 0;
-      padding: 5px;
+      padding: 5px 20px;
       margin-bottom: 20px;
 
       h4 {
         text-transform: uppercase;
         color: var(--default-blue);
-        font-size: 14px;
+        font-size: 12px;
       }
     }
 
