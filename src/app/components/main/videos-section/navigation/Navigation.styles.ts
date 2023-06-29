@@ -15,7 +15,7 @@ const NavigationContainer = styled.nav`
       border: 2px solid black;
       border-radius: 40px;
       padding: 10px 20px;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 500;
       cursor: pointer;
     }
@@ -35,10 +35,22 @@ const NavigationContainer = styled.nav`
 
   div {
     display: flex;
+    align-items: center;
     gap: 10px;
 
     label {
       font-weight: bold;
+    }
+
+    select {
+      border: 2px solid black;
+      padding: 10px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      background-color: white;
+      border-radius: 10px;
+      font-size: 14px;
     }
   }
 `;
