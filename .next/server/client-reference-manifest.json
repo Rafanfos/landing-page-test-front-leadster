@@ -72,6 +72,14 @@
         "async": false
       }
     },
+    "(app-client)/./public/assets/images/thumbnail.png": {
+      "*": {
+        "id": "(sc_client)/./public/assets/images/thumbnail.png",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/image.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
@@ -269,6 +277,14 @@
     },
     "/home/rafael/Documentos/projetos/landing-page-test-front-leadster/public/assets/images/logo.png": {
       "id": "(app-client)/./public/assets/images/logo.png",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/home/rafael/Documentos/projetos/landing-page-test-front-leadster/public/assets/images/thumbnail.png": {
+      "id": "(app-client)/./public/assets/images/thumbnail.png",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"

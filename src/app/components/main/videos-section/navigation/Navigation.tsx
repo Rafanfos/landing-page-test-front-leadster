@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { navigationBar } from '@/app/consts/videos-list';
 import NavigationContainer from './Navigation.styles';
 
-const Navigation = () => {
-  const [activeSection, setActiveSection] = useState('agency');
+export interface NavigationProps {
+  selectedSection: string;
+  onSectionChange: (section: string) => void;
+}
 
+const Navigation = ({ selectedSection, onSectionChange }: NavigationProps) => {
   const handleSectionClick = (section: string) => {
-    setActiveSection(section);
-    console.log(section);
+    onSectionChange(section);
   };
 
   return (
@@ -16,7 +18,7 @@ const Navigation = () => {
         {navigationBar.map(({ id, title }) => (
           <li
             key={id}
-            className={activeSection === id ? 'active' : ''}
+            className={selectedSection === id ? 'active' : ''}
             onClick={() => handleSectionClick(id)}
           >
             {title}

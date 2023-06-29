@@ -18,6 +18,7 @@ const NavigationContainer = styled.nav`
       font-size: 14px;
       font-weight: 500;
       cursor: pointer;
+      color: var(text-dark);
     }
 
     li:hover {
