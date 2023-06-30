@@ -12,6 +12,7 @@ const VideosSection = () => {
   );
   const [videos, setVideos] = useState<IVideos[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [sortBy, setSortBy] = useState<string>('publication');
 
   const handleSectionChange = (section: string) => {
     setSelectedSection(section);
@@ -23,11 +24,29 @@ const VideosSection = () => {
     }
   };
 
+  const handleSortChange = (sortBy: string) => {
+    setSortBy(sortBy);
+    sortVideos(sortBy);
+  };
+
+  const sortVideos = (sortBy: string) => {
+    let sortedVideos = [...videos];
+
+    if (sortBy === 'alphabetical') {
+      sortedVideos.sort((a, b) => a.title.localeCompare(b.title));
+    } else {
+      sortedVideos.sort((a, b) => a.id - b.id);
+    }
+
+    setVideos(sortedVideos);
+  };
+
   return (
     <VideosSectionContainer>
       <Navigation
         selectedSection={selectedSection}
         onSectionChange={handleSectionChange}
+        onSortChange={handleSortChange}
       />
       {videos.length > 0 ? (
         <>

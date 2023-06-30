@@ -1,14 +1,25 @@
+import { useState } from 'react';
 import { navigationBar } from '@/app/consts/videos-list';
 import NavigationContainer from './Navigation.styles';
 
 export interface NavigationProps {
   selectedSection: string;
   onSectionChange: (section: string) => void;
+  onSortChange: (sortBy: string) => void;
 }
 
-const Navigation = ({ selectedSection, onSectionChange }: NavigationProps) => {
+const Navigation = ({
+  selectedSection,
+  onSectionChange,
+  onSortChange,
+}: NavigationProps) => {
   const handleSectionClick = (section: string) => {
     onSectionChange(section);
+  };
+
+  const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const sortBy = event.target.value;
+    onSortChange(sortBy);
   };
 
   return (
@@ -26,9 +37,9 @@ const Navigation = ({ selectedSection, onSectionChange }: NavigationProps) => {
       </ul>
       <div>
         <label htmlFor='order'>Ordenar por</label>
-        <select id='order'>
-          <option>Data de publicação</option>
-          <option>Ordem Alfabética</option>
+        <select id='order' onChange={handleSortChange}>
+          <option value='publication'>Data de publicação</option>
+          <option value='alphabetical'>Ordem Alfabética</option>
         </select>
       </div>
     </NavigationContainer>
