@@ -8,12 +8,14 @@ const VideosSectionContainer = styled.div`
   width: 80%;
 
   .video-list {
-    max-width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    padding: 60px 20px;
     justify-content: space-between;
-    padding: 20px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    gap: 40px;
 
     li {
       width: 350px;
@@ -37,6 +39,15 @@ const VideosSectionContainer = styled.div`
         }
       }
     }
+  }
+
+  .no-videos-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 763px;
+    font-size: 56px;
+    color: var(--text-dark);
   }
 `;
 

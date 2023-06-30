@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavigationContainer = styled.nav`
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;

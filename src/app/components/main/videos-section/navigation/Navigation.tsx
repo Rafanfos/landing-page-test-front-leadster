@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { navigationBar } from '@/app/consts/videos-list';
 import NavigationContainer from './Navigation.styles';
 

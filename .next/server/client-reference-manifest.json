@@ -333,10 +333,6 @@
     }
   },
   "entryCSSFiles": {
-    "/home/rafael/Documentos/projetos/landing-page-test-front-leadster/src/app/page": {
-      "modules": [],
-      "files": []
-    },
     "/home/rafael/Documentos/projetos/landing-page-test-front-leadster/src/app/layout": {
       "modules": [
         "/home/rafael/Documentos/projetos/landing-page-test-front-leadster/src/app/globals.css",
@@ -345,6 +341,10 @@
       "files": [
         "static/css/app/layout.css"
       ]
+    },
+    "/home/rafael/Documentos/projetos/landing-page-test-front-leadster/src/app/page": {
+      "modules": [],
+      "files": []
     }
   }
 }

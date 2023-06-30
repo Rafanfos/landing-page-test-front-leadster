@@ -2,6 +2,7 @@ interface IVideos {
   id: number;
   title: string;
   videoUrl: string;
+  page: number;
 }
 
 const leads: IVideos[] = [
@@ -10,6 +11,7 @@ const leads: IVideos[] = [
     title: 'Tutoriais - Personalização de páginas e camapanhas',
     videoUrl:
       'https://www.youtube.com/watch?v=iHetrYfuJ-w&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=1',
+    page: 1,
   },
   {
     id: 1,
@@ -17,12 +19,14 @@ const leads: IVideos[] = [
       'Como aplicar chamadas inteligente para gerar mais leads qualificados',
     videoUrl:
       'https://www.youtube.com/watch?v=EFSpoXt1zrI&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=2',
+    page: 1,
   },
   {
     id: 2,
     title: 'Como criar uma chamada de Alta Conversão',
     videoUrl:
       'https://www.youtube.com/watch?v=EFSpoXt1zrI&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=3',
+    page: 1,
   },
   {
     id: 3,
@@ -30,6 +34,7 @@ const leads: IVideos[] = [
       'O fator mais importante de conversão para sua estratégia de Marketing Conversacional - Chamada ',
     videoUrl:
       'https://www.youtube.com/watch?v=Xfpr9JYX78A&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=4',
+    page: 1,
   },
   {
     id: 4,
@@ -37,6 +42,7 @@ const leads: IVideos[] = [
       'Como usar a Leadster para qualificar seus leads de forma automática',
     videoUrl:
       'https://www.youtube.com/watch?v=Xfpr9JYX78A&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=5',
+    page: 1,
   },
   {
     id: 5,
@@ -44,6 +50,7 @@ const leads: IVideos[] = [
       '6 Exemplos para personalizar a conversa de acordo com suas páginas e aumentar o volume de leads🚀 ',
     videoUrl:
       'https://www.youtube.com/watch?v=Xfpr9JYX78A&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=6',
+    page: 1,
   },
   {
     id: 6,
@@ -51,6 +58,7 @@ const leads: IVideos[] = [
       'Como usar o poder da personalização por dispositivo para aumentar sua conversão.',
     videoUrl:
       'https://www.youtube.com/watch?v=Xfpr9JYX78A&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=7',
+    page: 2,
   },
   {
     id: 7,
@@ -58,6 +66,7 @@ const leads: IVideos[] = [
       'Como Transformar o Blog da sua Empresa em um Canal de Vendas (Inbound Marketing)',
     videoUrl:
       'https://www.youtube.com/watch?v=Xfpr9JYX78A&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=8',
+    page: 2,
   },
   {
     id: 8,
@@ -65,6 +74,7 @@ const leads: IVideos[] = [
       'Agendamento de Reuniões - Acelere suas vendas com a nova funcionalidade da Leadster!',
     videoUrl:
       'https://www.youtube.com/watch?v=Xfpr9JYX78A&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=9',
+    page: 2,
   },
   {
     id: 9,
@@ -72,12 +82,14 @@ const leads: IVideos[] = [
       'Por que você perde 60% dos leads usando formulários de contato no site?',
     videoUrl:
       'https://www.youtube.com/watch?v=Xfpr9JYX78A&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=10',
+    page: 2,
   },
   {
     id: 10,
     title: 'Leadster - Demonstração da plataforma de Marketing Conversacional',
     videoUrl:
       'https://www.youtube.com/watch?v=Xfpr9JYX78A&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=11',
+    page: 2,
   },
   {
     id: 11,
@@ -85,6 +97,7 @@ const leads: IVideos[] = [
       'Por que 60% do seu Investimento em Anúncios pode estar sendo Desperdiçado',
     videoUrl:
       'https://www.youtube.com/watch?v=Xfpr9JYX78A&list=PL_dirAhLkFrvUz1Ml31VcRFdUXm5vgUiB&index=12',
+    page: 2,
   },
 ];
 
